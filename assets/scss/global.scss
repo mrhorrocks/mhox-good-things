@@ -1,0 +1,57 @@
+@import "./partials/_reset";
+@import "../../assets/fonts/_googlefonts";
+@import "./partials/_type";
+
+:root {
+  --primary-color: #367d91;
+  --app-red: #c02f47;
+  --app-green: #478077;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #ccc;
+  --color-text: #000000;
+  --button-hover-color: #666666;
+  --button-link-text: #cf1b46;
+}
+#app {
+  font-weight: normal;
+  min-width: 320px;
+}
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--white);
+  /* font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, */
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-family: Rubik, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  /* background-color: #ccc; */
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  main {
+    background-color: lightblue;
+  }
+}
+.grid {
+  display: grid;
+}
+.align-center {
+  text-align: center;
+}
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: green;
+} */
