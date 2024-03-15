@@ -116,19 +116,17 @@ section.section-intro {
       line-height: 1;
       background-color: var(--primary-color);
       color: var(--white);
-      margin-bottom: 1.5rem;
-      width: 100%;
-      padding: 2rem 1rem;
-
-      @media (min-width: 400px) {
-        width: fit-content;
-      }
+      margin: 1rem 0;
+      padding: 1rem 1rem;
+      font-size: clamp(1.8rem, 9vw, 4.5rem);
+      width: fit-content;
     }
     p.hero-text {
       padding: 1rem 1.5rem;
       background-color: white;
       color: var(--app-green);
       width: 100%;
+      margin: 0 0 2rem 0;
       @media (min-width: 400px) {
         max-width: 40rem;
       }
@@ -158,14 +156,17 @@ section.intro-two {
       p {
         color: var(--white);
       }
+      a.button {
+        margin-top: 2rem;
+      }
       &.big-image {
         background: url("/assets/images/pexels-kat-wilcox-923657.jpg");
         background-size: cover;
         background-position-y: 30%;
         background-repeat: no-repeat;
+        min-height: 400px;
         @media (min-width: 1024px) {
           height: 100%;
-          min-height: 400px;
         }
       }
     }
@@ -173,6 +174,7 @@ section.intro-two {
 }
 // intro-three
 section.intro-three {
+  text-align: center;
   background-color: var(--grey);
   margin-bottom: 1rem;
   .grid {
@@ -198,17 +200,17 @@ section.intro-three {
       align-items: center;
       width: 100%;
       margin: 1rem 0;
-      padding: 1rem 0;
+      padding: 1rem;
       background-color: var(--white);
       border-radius: 2rem;
       @media (min-width: 768px) {
         flex-direction: row;
       }
       p {
-        font-size: 2rem;
-        line-height: 1.8;
+        font-size: 1.8rem;
+        line-height: 1.3;
         margin-right: 1rem;
-        text-align: center;
+        // text-align: center;
         a {
           color: var(--app-green);
         }

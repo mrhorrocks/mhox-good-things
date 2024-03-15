@@ -43,7 +43,7 @@ a {
   display: inline-block;
   background-color: var(--white);
   padding: 0.5rem 1.5rem;
-  margin: 2rem 0;
+  margin: 0rem 0 0 0;
   border-radius: 2rem;
   border: 3px solid var(--white);
   box-sizing: border-box;
@@ -52,6 +52,7 @@ a {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
+  width: 100%;
   transition: 0.25s;
 
   @media (min-width: 768px) {
