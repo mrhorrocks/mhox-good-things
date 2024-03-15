@@ -161,14 +161,11 @@ section.intro-two {
       &.big-image {
         background: url("/assets/images/pexels-kat-wilcox-923657.jpg");
         background-size: cover;
-        background-position-y: -260px;
-        background-repeat: no-repeat;
-        height: 300px;
-        background-size: cover;
-        background-position: 50%;
+        background-position-y: 30%;
         background-repeat: no-repeat;
         @media (min-width: 1024px) {
-          height: 400px;
+          height: 100%;
+          min-height: 400px;
         }
       }
     }
