@@ -26,10 +26,11 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--white);
-  min-height: 100px;
+  min-height: 80px;
   padding-left: 1rem;
   padding-right: 1rem;
   @media (min-width: 768px) {
+    min-height: 100px;
     padding-left: 3rem;
     padding-right: 3rem;
   }
