@@ -1,5 +1,5 @@
 <template>
-  <nav class="big-screens">
+  <nav class="app-nav">
     <ul>
       <li>
         <NuxtLink to="/">Home</NuxtLink>
@@ -23,20 +23,21 @@
   </nav>
 </template>
 
-<style lang="scss" scoped>
-nav {
+<style lang="scss">
+nav.app-nav {
   display: none;
   @media (min-width: 1024px) {
     display: flex;
   }
   ul {
     display: flex;
-    height: 100px;
     li {
       display: inherit;
-      height: 100px;
-      line-height: 100px;
       a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
         color: var(--black);
         padding: 0 0.3rem;
         text-decoration: none;
@@ -46,11 +47,11 @@ nav {
         &:hover {
           color: var(--primary-color);
           text-decoration: underline 5px var(--primary-color);
-          text-underline-offset: 0.5em;
+          // text-underline-offset: 0.5em;
         }
         @media (min-width: 1024px) {
           font-size: 1.1rem;
-          padding: 0 1rem;
+          padding: 0.5rem;
         }
       }
     }

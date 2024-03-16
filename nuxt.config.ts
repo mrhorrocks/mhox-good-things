@@ -7,8 +7,8 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Good Things Foundation - Get online week',
-      meta: [{ name: 'description', content: 'Good Things Foundation - Get online week' }],
+      title: 'Get online week - Good Things Foundation',
+      meta: [{ name: 'description', content: 'Get online week - Good Things Foundation' }],
     }
   },
   css: [

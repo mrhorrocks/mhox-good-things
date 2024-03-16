@@ -21,7 +21,7 @@ section.section-search {
     display: flex;
     justify-content: space-between;
     @media (min-width: 768px) {
-      padding-left: 3rem;
+      padding: 0 3rem;
     }
     div {
       display: flex;

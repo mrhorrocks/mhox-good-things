@@ -1,3 +1,4 @@
+import { IconsIconMenu } from '#build/components';
 <template>
   <section>
     <div class="container">
@@ -8,20 +9,16 @@
           class="logo"
           src="@/assets/images/good-things-foundation-logo.png"
         />
-        <!-- App Big Nav -->
+        <!-- App Main Nav -->
         <AppNav />
+        <!-- App Mobile Nav -->
         <div class="toggle-menu">
-          <IconMenu />
+          <MobileNav />
         </div>
       </header>
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import AppNav from '../components/AppNav.vue'
-import IconMenu from '../components/icons/IconMenu.vue'
-</script>
 
 <style lang="scss" scoped>
 header {
@@ -38,9 +35,8 @@ header {
   }
   img {
     height: 2.5rem;
-
     @media (min-width: 768px) {
-      height: 2.4rem;
+      height: 3.4rem;
     }
   }
   .toggle-menu {

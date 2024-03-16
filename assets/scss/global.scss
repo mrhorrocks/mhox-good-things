@@ -1,6 +1,7 @@
 @import "./partials/_reset";
 @import "../../assets/fonts/_googlefonts";
 @import "./partials/_type";
+@import "./partials/_colours";
 
 :root {
   --primary-color: #367d91;
@@ -13,6 +14,7 @@
   --button-hover-color: #666666;
   --button-link-text: #cf1b46;
 }
+
 #app {
   font-weight: normal;
   min-width: 320px;

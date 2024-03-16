@@ -105,7 +105,6 @@ section.section-intro {
   background-position-x: 80%;
   background-position-y: 50%;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--grey);
   .intro-one {
     padding: 1rem;
 
@@ -203,6 +202,7 @@ section.intro-three {
       padding: 1rem;
       background-color: var(--white);
       border-radius: 2rem;
+      box-shadow: 0 0 2.25em #00000033;
       @media (min-width: 768px) {
         flex-direction: row;
       }
