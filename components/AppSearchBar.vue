@@ -54,7 +54,7 @@ section.section-search {
           display: none;
           @media (min-width: 768px) {
             display: block;
-            margin-left: 0.5rem;
+            padding-left: 0.5rem;
           }
         }
       }
