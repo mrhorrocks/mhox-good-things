@@ -1,4 +1,3 @@
-import { IconsIconMenu } from '#build/components';
 <template>
   <section>
     <div class="container">
@@ -45,7 +44,6 @@ header {
     width: 40px;
     height: 40px;
     color: var(--app-red);
-    cursor: pointer;
     @media (min-width: 1024px) {
       display: none;
     }
