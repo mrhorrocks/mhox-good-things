@@ -55,45 +55,37 @@ a {
   width: 100%;
   transition: 0.25s;
 
-  @media (min-width: 768px) {
+  @media (min-width: 400px) {
     width: auto;
   }
-
   &:hover {
     background-color: var(--primary-color);
     color: var(--white);
     border: 3px solid var(--white);
   }
-
   &.app-green {
     background-color: var(--app-green);
     color: var(--white);
-
     &:hover {
       background-color: var(--app-red);
     }
   }
-
   &.app-red {
     background-color: var(--app-red);
     color: var(--white);
-
     &:hover {
       background-color: var(--app-green);
     }
   }
-
   &.on-white {
     background-color: var(--white);
     color: var(--app-red);
     border: 3px solid var(--black);
-
     &:hover {
       background-color: var(--app-red);
       color: var(--white);
     }
   }
-
   &.no-margin {
     margin: 0;
   }
