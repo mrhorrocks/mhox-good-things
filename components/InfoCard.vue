@@ -1,6 +1,3 @@
-<script setup lang="ts">
-import ButtonLink from "@/components/ButtonLink.vue";
-</script>
 <template>
   <div class="info-card">
     <h3>{{ title }}</h3>
