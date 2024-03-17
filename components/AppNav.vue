@@ -37,7 +37,7 @@ nav.app-nav {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 100px;
         color: var(--black);
         padding: 0 0.3rem;
         text-decoration: none;
@@ -47,7 +47,7 @@ nav.app-nav {
         &:hover {
           color: var(--primary-color);
           text-decoration: underline 5px var(--primary-color);
-          // text-underline-offset: 0.5em;
+          text-underline-offset: 0.5em;
         }
         @media (min-width: 1024px) {
           font-size: 1.1rem;

@@ -99,10 +99,10 @@ export default {
         width: 100%;
         li {
           width: 100%;
-          height: 4rem;
           a {
             font-size: 1.75rem;
             color: #fff;
+            height: 4rem;
             &:hover {
               color: lighten($primary-colour, 30%);
             }
