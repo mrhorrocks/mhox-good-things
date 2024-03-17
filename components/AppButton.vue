@@ -1,5 +1,6 @@
 <template>
-  <button>
+  <!-- <button :class="['app-button', buttonClass]"> -->
+  <button class="app-button">
     <slot>{{ text }}</slot>
   </button>
 </template>
@@ -17,17 +18,18 @@ export default {
 </script>
 
 <style lang="scss">
-.car-button {
-  background: #82f7ff;
-  border: 0;
-  border-radius: 0.7rem;
-  padding: 0.5rem 1.5rem;
-  margin: 0.2rem 0 0.2rem 0.2rem;
-  font-weight: bold;
+.app-button {
+  display: flex;
+  padding: 0.75rem 1.75rem;
+  border: 0px solid white;
+  color: white;
+  background-color: var(--app-red);
   font-family: "Roboto";
+  font-size: 1rem;
+  border-radius: 2rem;
   cursor: pointer;
   &:hover {
-    background: darken(#82f7ff, 20%);
+    background: #367d91;
   }
 }
 </style>
