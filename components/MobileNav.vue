@@ -1,26 +1,26 @@
 <template>
   <div class="app-mobile-nav">
     <!-- Activation button -->
-    <HamburgerIconOpen v-if="!sidePanel" @click="togglePanel" />
+    <HamburgerIconOpen v-if="!sidePanel" @click="toggleMenu" />
 
     <!-- <Button
       v-if="!sidePanel"
-      @click="togglePanel"
+      @click="toggleMenu"
       buttonClass="nav-button"
       text="Open Side Panel"
     />
 
     <Button
       v-if="sidePanel"
-      @click="togglePanel"
+      @click="toggleMenu"
       buttonClass="nav-button"
       text="Close Side Panel"
     /> -->
 
     <!-- Modal background -->
-    <div v-if="sidePanel" @click="closeSidePanel" class="nav-modal-bg"></div>
+    <div v-if="sidePanel" @click="closeNavPopup" class="nav-modal-bg"></div>
     <!-- Content -->
-    <div v-if="sidePanel" class="nav-panel">
+    <div v-if="sidePanel" class="nav-panel" @click.stop="closeNavPopup">
       <!-- Close panel -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         class="lucide lucide-x-circle close-panel-icon"
-        @click.stop="closeSidePanel"
+        @click.stop="closeNavPopup"
       >
         <circle cx="12" cy="12" r="10" />
         <path d="m15 9-6 6" />
@@ -55,10 +55,10 @@ export default {
     };
   },
   methods: {
-    togglePanel () {
+    toggleMenu () {
       this.sidePanel = !this.sidePanel;
     },
-    closeSidePanel () {
+    closeNavPopup () {
       this.sidePanel = false;
     },
   },
