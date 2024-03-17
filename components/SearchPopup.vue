@@ -23,7 +23,6 @@
     <div
       v-if="searchPanel"
       @click="closeSearchPanel"
-      @keydown="handleKeyDown"
       class="search-modal-bg"
     ></div>
     <!-- Modal background -->
