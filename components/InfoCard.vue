@@ -1,6 +1,3 @@
-<script setup lang="ts">
-import ButtonLink from "@/components/ButtonLink.vue";
-</script>
 <template>
   <div class="info-card">
     <h3>{{ title }}</h3>
@@ -33,12 +30,13 @@ export default {
 .info-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
-  box-sizing: border-box;
+  min-height: 200px;
   text-align: center;
   background-color: var(--white);
-  // border-radius: 2rem;
+  border-radius: 1rem;
   box-shadow: 0 0 2.25em #00000033;
   h4 {
     color: var(--black);

@@ -43,7 +43,7 @@ a {
   display: inline-block;
   background-color: var(--white);
   padding: 0.5rem 1.5rem;
-  margin: 2rem 0;
+  margin: 0rem 0 0 0;
   border-radius: 2rem;
   border: 3px solid var(--white);
   box-sizing: border-box;
@@ -52,47 +52,40 @@ a {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
+  width: 100%;
   transition: 0.25s;
 
-  @media (min-width: 768px) {
+  @media (min-width: 400px) {
     width: auto;
   }
-
   &:hover {
     background-color: var(--primary-color);
     color: var(--white);
     border: 3px solid var(--white);
   }
-
   &.app-green {
     background-color: var(--app-green);
     color: var(--white);
-
     &:hover {
       background-color: var(--app-red);
     }
   }
-
   &.app-red {
     background-color: var(--app-red);
     color: var(--white);
-
     &:hover {
       background-color: var(--app-green);
     }
   }
-
   &.on-white {
     background-color: var(--white);
     color: var(--app-red);
     border: 3px solid var(--black);
-
     &:hover {
       background-color: var(--app-red);
       color: var(--white);
     }
   }
-
   &.no-margin {
     margin: 0;
   }
