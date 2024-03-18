@@ -86,13 +86,11 @@ export default {
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 1rem;
     .app-nav {
       display: flex;
       align-items: center;
       height: 100vh;
       width: 100%;
-      padding: 0rem 0rem 6rem 2rem;
       ul {
         display: flex;
         flex-direction: column;
@@ -103,6 +101,7 @@ export default {
             font-size: 1.75rem;
             color: #fff;
             height: 4rem;
+            padding: 0 6.5vw;
             &:hover {
               color: lighten($primary-colour, 30%);
             }
