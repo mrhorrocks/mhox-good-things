@@ -1,4 +1,4 @@
-# Good Things Foundation starte template
+# Good Things Foundation starter template
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
