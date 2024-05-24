@@ -60,29 +60,30 @@
       </p>
     </div>
 
-    <div class="grid info-cards">
-      <InfoCard
-        title="Get online week"
-        copytext="Get Online Week is an annual digital inclusion campaign organised by Good Things Foundation"
-        linkText="Read more"
-      />
-      <InfoCard
-        title="Learn my way"
-        copytext="Learn My Way is a website of free online learning for beginners, helping you develop digital skills to make the most of the online world."
-        linkText="Read more"
-      />
-      <InfoCard
-        title="Make it click"
-        copytext="Make It Click was a programme targeting those who have made the move online but lack digital skills and use the internet only in limited ways."
-        linkText="Read more"
-      />
-      <InfoCard
-        title="Digital you"
-        copytext="We are the digital inclusion charity, helping people improve their lives with free access to data, devices and digital skills learning"
-        linkText="Read more"
-      />
+    <div class="container">
+      <div class="grid info-cards">
+        <InfoCard
+          title="Get online week"
+          copytext="Get Online Week is an annual digital inclusion campaign organised by Good Things Foundation"
+          linkText="Read more"
+        />
+        <InfoCard
+          title="Learn my way"
+          copytext="Learn My Way is a website of free online learning for beginners, helping you develop digital skills to make the most of the online world."
+          linkText="Read more"
+        />
+        <InfoCard
+          title="Make it click"
+          copytext="Make It Click was a programme targeting those who have made the move online but lack digital skills and use the internet only in limited ways."
+          linkText="Read more"
+        />
+        <InfoCard
+          title="Digital you"
+          copytext="We are the digital inclusion charity, helping people improve their lives with free access to data, devices and digital skills learning"
+          linkText="Read more"
+        />
+      </div>
     </div>
-
     <div class="align-center">
       <ButtonLink to="/" linkText="More about what we do" />
     </div>
@@ -107,7 +108,8 @@ section.section-intro {
       padding: 3rem;
     }
     h1 {
-      background-color: lighten($primary-colour, 0%);
+      background-color: $primary-colour;
+      background-color: $app-red;
       color: $white;
       margin: 1rem 0;
       padding: 1rem 1rem;
