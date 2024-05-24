@@ -35,13 +35,11 @@
   <section class="intro-three">
     <div class="grid container">
       <!--  -->
-      <div>
-        <h2>How can we help you?</h2>
-        <p>
-          Let us know who you are and what you're looking for, and we'll help
-          you get to the right place.
-        </p>
-      </div>
+      <h2>How can we help you?</h2>
+      <p>
+        Let us know who you are and what you're looking for, and we'll help you
+        get to the right place.
+      </p>
       <!--  -->
 
       <!--  -->
@@ -126,7 +124,7 @@ section.section-intro {
       color: $app-green;
       width: 100%;
       margin: 2rem 0;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: bold;
       line-height: 1.5;
       border-radius: 10px;
@@ -187,23 +185,22 @@ section.intro-three {
     @media (min-width: 1024px) {
       padding: 2rem;
     }
-    div {
-      h2 {
-        color: $black;
-        line-height: 1.2;
-        margin-bottom: 1rem;
-      }
-      p {
-        color: $black;
-      }
+    h2 {
+      color: $black;
+      line-height: 1.2;
+      margin-bottom: 1rem;
     }
+    p {
+      color: $black;
+    }
+
     .cta-banner {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin: 1rem auto;
+      margin: 2rem auto;
       padding: 1rem;
       background-color: $white;
       box-shadow: 0 0 2.25em #00000033;
@@ -238,7 +235,6 @@ section.intro-three {
   padding: 1rem;
   h2 {
     color: $white;
-    line-height: 1.2;
     margin-bottom: 1rem;
   }
   p {
