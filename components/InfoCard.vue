@@ -1,7 +1,7 @@
 <template>
   <div class="info-card">
     <h3>{{ title }}</h3>
-    <p>Lorem ipsum dolor sit</p>
+    <p>{{ copytext }}</p>
     <ButtonLink to="/" :linkText="linkText" class="on-white" />
   </div>
 </template>
@@ -38,6 +38,11 @@ export default {
   background-color: var(--white);
   border-radius: 1rem;
   box-shadow: 0 0 2.25em #00000033;
+  p {
+    color: black;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
   h4 {
     color: var(--black);
     font-weight: 500;

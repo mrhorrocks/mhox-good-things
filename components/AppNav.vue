@@ -5,19 +5,19 @@
         <NuxtLink to="/">Home</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about">What we do</NuxtLink>
+        <NuxtLink to="/what-we-do">What we do</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/reason">The digital divide</NuxtLink>
+        <NuxtLink to="/the-digital-divide">The digital divide</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/reason">Get involved</NuxtLink>
+        <NuxtLink to="/get-involved">Get involved</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/reason">Our network</NuxtLink>
+        <NuxtLink to="/our-network">Our network</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/reason">Insights</NuxtLink>
+        <NuxtLink to="/insights">Insights</NuxtLink>
       </li>
     </ul>
   </nav>
