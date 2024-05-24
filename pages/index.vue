@@ -4,9 +4,9 @@
       <div class="intro-one">
         <h1>Get online week</h1>
         <p class="hero-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus atque
-          reiciendis incidunt explicabo ipsum unde autem sunt id veniam laborum
-          iure officia numquam rerum.
+          Taking place every year in October, Get Online Week is Good Things
+          Foundation's digital inclusion campaign that inspires people to do
+          more online and helps them to learn how.
         </p>
         <ButtonLink to="/" linkText="Get involved now!" />
       </div>
@@ -46,9 +46,7 @@
 
       <!--  -->
       <div class="cta-banner">
-        <p>
-          I am <a href="#">an individual</a> and I <a href="#">want to learn</a>
-        </p>
+        <p>I am an individual and I want to learn</p>
         <ButtonLink to="/" linkText="Start now" class="app-red no-margin" />
       </div>
       <!--  -->
@@ -68,22 +66,22 @@
       <div class="grid info-cards">
         <InfoCard
           title="Get online week"
-          copytext="Lorem ipsum dolor sit."
+          copytext="Get Online Week is an annual digital inclusion campaign organised by Good Things Foundation"
           linkText="Read more"
         />
         <InfoCard
           title="Learn my way"
-          copytext="Lorem ipsum dolor sit."
+          copytext="Learn My Way is a website of free online learning for beginners, helping you develop digital skills to make the most of the online world."
           linkText="Read more"
         />
         <InfoCard
           title="Make it click"
-          copytext="Lorem ipsum dolor sit."
+          copytext="Make It Click was a programme targeting those who have made the move online but lack digital skills and use the internet only in limited ways."
           linkText="Read more"
         />
         <InfoCard
           title="Digital you"
-          copytext="Lorem ipsum dolor sit."
+          copytext="We are the digital inclusion charity, helping people improve their lives with free access to data, devices and digital skills learning"
           linkText="Read more"
         />
       </div>
@@ -95,7 +93,7 @@
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 // intro
 section.section-intro {
   background-color: #ccc;
@@ -112,20 +110,32 @@ section.section-intro {
       padding: 3rem;
     }
     h1 {
-      line-height: 1;
       background-color: var(--primary-color);
       color: var(--white);
-      margin: 1rem 0;
+      margin: 1.5rem;
       padding: 1rem 1rem;
-      font-size: clamp(1.8rem, 9vw, 4.5rem);
+      font-size: clamp(2.1rem, 9vw, 4.5rem);
+      font-weight: normal;
+      line-height: 1;
       width: fit-content;
+      width: 100%;
+      max-width: 40rem;
+      text-align: center;
+      border-radius: 10px;
+      @media (min-width: 768px) {
+        width: fit-content;
+      }
     }
     p.hero-text {
-      padding: 1rem 1.5rem;
+      padding: 1.5rem;
       background-color: white;
       color: var(--app-green);
       width: 100%;
       margin: 0 0 2rem 0;
+      font-weight: bold;
+      line-height: 1.5;
+      border-radius: 10px;
+      box-shadow: 0 0 2.25em #00000033;
       @media (min-width: 400px) {
         max-width: 40rem;
       }
@@ -198,11 +208,12 @@ section.intro-three {
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin: 1rem 0;
+      margin: 1rem auto;
       padding: 1rem;
       background-color: var(--white);
-      border-radius: 2rem;
       box-shadow: 0 0 2.25em #00000033;
+      max-width: 880px;
+      border-radius: 10px;
       @media (min-width: 768px) {
         flex-direction: row;
       }
@@ -210,7 +221,7 @@ section.intro-three {
         font-size: 1.8rem;
         line-height: 1.3;
         margin-right: 1rem;
-        // text-align: center;
+        font-weight: bold;
         a {
           color: var(--app-green);
         }

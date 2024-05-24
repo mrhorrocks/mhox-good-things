@@ -39,20 +39,22 @@ export default {
 
 <style lang="scss" scoped>
 a {
+  width: 100%;
   position: relative;
   display: inline-block;
   background-color: var(--white);
   padding: 0.5rem 1.5rem;
   margin: 0rem 0 0 0;
-  border-radius: 2rem;
+  border-radius: 10px;
   border: 3px solid var(--white);
   box-sizing: border-box;
   color: var(--button-link-text);
   cursor: pointer;
   text-align: center;
+  font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
-  width: 100%;
+  box-shadow: 0 0 2.25em #00000033;
   transition: 0.25s;
 
   @media (min-width: 400px) {
