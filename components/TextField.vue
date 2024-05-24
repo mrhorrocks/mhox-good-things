@@ -63,7 +63,6 @@ div.textfield {
     text-indent: 0.5rem;
     margin: 0;
     border-radius: 0.5rem;
-    border: 2px solid var(--first-colour);
   }
   input:disabled {
     border: 2px solid #95989a;

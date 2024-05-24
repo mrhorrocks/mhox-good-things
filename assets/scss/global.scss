@@ -3,26 +3,14 @@
 @import "./partials/_type";
 @import "./partials/_colours";
 
-:root {
-  --primary-color: #367d91;
-  --app-red: #c02f47;
-  --app-green: #478077;
-  --white: #ffffff;
-  --black: #000000;
-  --grey: #ccc;
-  --color-text: #000000;
-  --button-hover-color: #666666;
-  --button-link-text: #cf1b46;
-}
-
 #app {
   font-weight: normal;
   min-width: 320px;
 }
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--white);
+  color: $black;
+  background: $white;
   /* font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, */
   /* font-family: Roboto, "Helvetica Neue", sans-serif; */
   font-family: Rubik, "Helvetica Neue", sans-serif;

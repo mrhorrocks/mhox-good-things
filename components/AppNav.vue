@@ -24,6 +24,7 @@
 </template>
 
 <style lang="scss">
+@import "../assets/scss/partials/_colours";
 nav.app-nav {
   display: none;
   @media (min-width: 1024px) {
@@ -38,15 +39,15 @@ nav.app-nav {
         align-items: center;
         width: 100%;
         height: 100px;
-        color: var(--black);
+        color: $black;
         padding: 0 0.3rem;
         text-decoration: none;
         transition: 0.5s;
         font-weight: bold;
         &.router-link-active,
         &:hover {
-          color: var(--primary-color);
-          text-decoration: underline 5px var(--primary-color);
+          color: $primary-colour;
+          text-decoration: underline 5px $primary-colour;
           text-underline-offset: 0.5em;
         }
         @media (min-width: 1024px) {

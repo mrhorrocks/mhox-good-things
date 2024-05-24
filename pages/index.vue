@@ -2,7 +2,7 @@
   <section class="section-intro">
     <div class="container">
       <div class="intro-one">
-        <h1>Get online week</h1>
+        <h1>Get Online Week</h1>
         <p class="hero-text">
           Taking place every year in October, Get Online Week is Good Things
           Foundation's digital inclusion campaign that inspires people to do
@@ -94,6 +94,7 @@
 </template>
 
 <style lang="scss">
+@import "../assets/scss/partials/_colours";
 // intro
 section.section-intro {
   background-color: #ccc;
@@ -110,28 +111,24 @@ section.section-intro {
       padding: 3rem;
     }
     h1 {
-      background-color: var(--primary-color);
-      color: var(--white);
-      margin: 1.5rem;
+      background-color: lighten($primary-colour, 0%);
+      color: $white;
+      margin: 1rem 0;
       padding: 1rem 1rem;
       font-size: clamp(2.1rem, 9vw, 4.5rem);
       font-weight: normal;
       line-height: 1;
-      width: fit-content;
       width: 100%;
       max-width: 40rem;
-      text-align: center;
       border-radius: 10px;
-      @media (min-width: 768px) {
-        width: fit-content;
-      }
     }
     p.hero-text {
       padding: 1.5rem;
-      background-color: white;
-      color: var(--app-green);
+      background-color: #ffffffde;
+      color: $app-green;
       width: 100%;
-      margin: 0 0 2rem 0;
+      margin: 2rem 0;
+      font-size: 1.5rem;
       font-weight: bold;
       line-height: 1.5;
       border-radius: 10px;
@@ -151,19 +148,19 @@ section.intro-two {
       grid-template-columns: 50% 50%; // 2 col grid
     }
     div {
-      background-color: var(--app-green);
+      background-color: $app-green;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
       h2 {
-        color: var(--white);
+        color: $white;
         line-height: 1.2;
         margin-bottom: 1rem;
       }
       p {
-        color: var(--white);
+        color: $white;
       }
       a.button {
         margin-top: 2rem;
@@ -184,7 +181,7 @@ section.intro-two {
 // intro-three
 section.intro-three {
   text-align: center;
-  background-color: var(--grey);
+  background-color: $grey;
   margin-bottom: 1rem;
   .grid {
     grid-template-columns: auto; // 1 col grid
@@ -194,12 +191,12 @@ section.intro-three {
     }
     div {
       h2 {
-        color: var(--black);
+        color: $black;
         line-height: 1.2;
         margin-bottom: 1rem;
       }
       p {
-        color: var(--black);
+        color: $black;
       }
     }
     .cta-banner {
@@ -210,7 +207,7 @@ section.intro-three {
       width: 100%;
       margin: 1rem auto;
       padding: 1rem;
-      background-color: var(--white);
+      background-color: $white;
       box-shadow: 0 0 2.25em #00000033;
       max-width: 880px;
       border-radius: 10px;
@@ -223,7 +220,7 @@ section.intro-three {
         margin-right: 1rem;
         font-weight: bold;
         a {
-          color: var(--app-green);
+          color: $app-green;
         }
       }
       a {
@@ -238,26 +235,27 @@ section.intro-three {
 }
 // intro-cta
 section.intro-cta {
-  background-color: var(--primary-color);
+  background-color: $primary-colour;
+  text-align: center;
   div {
     padding: 1rem;
     h2 {
-      color: var(--white);
+      color: $white;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
     p {
-      color: var(--white);
+      color: $white;
     }
   }
   div.grid {
     grid-template-columns: 1fr; // 1 col grid
     grid-gap: 2rem;
-    @media (min-width: 550px) {
-      grid-template-columns: 1fr 1fr; // 2 col grid
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
     }
-    @media (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr; // 4 col grid
+    @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }
