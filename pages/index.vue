@@ -55,40 +55,38 @@
 
   <section class="intro-cta">
     <div class="container">
-      <div>
-        <h2>What we do?</h2>
-        <p>
-          You might not have heard of us. But we're the people behind the
-          following impactful programmes.
-        </p>
-      </div>
+      <h2>What we do?</h2>
+      <p>
+        You might not have heard of us. But we're the people behind the
+        following impactful programmes.
+      </p>
+    </div>
 
-      <div class="grid info-cards">
-        <InfoCard
-          title="Get online week"
-          copytext="Get Online Week is an annual digital inclusion campaign organised by Good Things Foundation"
-          linkText="Read more"
-        />
-        <InfoCard
-          title="Learn my way"
-          copytext="Learn My Way is a website of free online learning for beginners, helping you develop digital skills to make the most of the online world."
-          linkText="Read more"
-        />
-        <InfoCard
-          title="Make it click"
-          copytext="Make It Click was a programme targeting those who have made the move online but lack digital skills and use the internet only in limited ways."
-          linkText="Read more"
-        />
-        <InfoCard
-          title="Digital you"
-          copytext="We are the digital inclusion charity, helping people improve their lives with free access to data, devices and digital skills learning"
-          linkText="Read more"
-        />
-      </div>
+    <div class="grid info-cards">
+      <InfoCard
+        title="Get online week"
+        copytext="Get Online Week is an annual digital inclusion campaign organised by Good Things Foundation"
+        linkText="Read more"
+      />
+      <InfoCard
+        title="Learn my way"
+        copytext="Learn My Way is a website of free online learning for beginners, helping you develop digital skills to make the most of the online world."
+        linkText="Read more"
+      />
+      <InfoCard
+        title="Make it click"
+        copytext="Make It Click was a programme targeting those who have made the move online but lack digital skills and use the internet only in limited ways."
+        linkText="Read more"
+      />
+      <InfoCard
+        title="Digital you"
+        copytext="We are the digital inclusion charity, helping people improve their lives with free access to data, devices and digital skills learning"
+        linkText="Read more"
+      />
+    </div>
 
-      <div class="align-center">
-        <ButtonLink to="/" linkText="More about what we do" />
-      </div>
+    <div class="align-center">
+      <ButtonLink to="/" linkText="More about what we do" />
     </div>
   </section>
 </template>
@@ -234,19 +232,17 @@ section.intro-three {
   }
 }
 // intro-cta
-section.intro-cta {
+.intro-cta {
   background-color: $primary-colour;
   text-align: center;
-  div {
-    padding: 1rem;
-    h2 {
-      color: $white;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-    p {
-      color: $white;
-    }
+  padding: 1rem;
+  h2 {
+    color: $white;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $white;
   }
   div.grid {
     grid-template-columns: 1fr; // 1 col grid

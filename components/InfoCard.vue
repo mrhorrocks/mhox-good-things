@@ -28,7 +28,9 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/partials/_colours";
-.info-card {
+div.info-card {
+  padding: 1rem;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
