@@ -15,9 +15,10 @@
 </template>
 
 <style lang="scss">
+@import "../assets/scss/partials/_colours";
 section.section-search {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--grey);
+  background-color: $white;
+  border-bottom: 1px solid $grey;
 
   div.search-bar {
     display: flex;
@@ -34,10 +35,10 @@ section.section-search {
     }
     a {
       display: flex;
-      background-color: var(--white);
+      background-color: $white;
       font-weight: bold;
       line-height: 3;
-      color: var(--black);
+      color: $black;
       text-decoration: none;
       padding: 0rem 1.5rem;
       border: 1px solid #ccc;
@@ -64,15 +65,15 @@ section.section-search {
           display: block;
           border-left: 1px solid #ccc;
           border-right: 0;
-          box-shadow: inset 0 -3px var(--app-green);
+          box-shadow: inset 0 -5px $app-green;
         }
       }
       &.donate {
-        background-color: var(--app-red);
-        color: var(--white);
+        background-color: $app-red;
+        color: $white;
         border: 0;
         &:hover {
-          $app-red: var(--app-red);
+          $app-red: $app-red;
           background-color: #367d91;
         }
       }

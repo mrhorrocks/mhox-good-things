@@ -1,8 +1,17 @@
+<script setup>
+useHead({
+  titleTemplate: "%s",
+});
+definePageMeta({
+  layout: "default",
+});
+</script>
+
 <template>
   <section class="section-intro">
     <div class="container">
       <div class="intro-one">
-        <h1>Get online week</h1>
+        <h1>Get Online Week</h1>
         <p class="hero-text">
           Taking place every year in October, Get Online Week is Good Things
           Foundation's digital inclusion campaign that inspires people to do
@@ -35,13 +44,11 @@
   <section class="intro-three">
     <div class="grid container">
       <!--  -->
-      <div>
-        <h2>How can we help you?</h2>
-        <p>
-          Let us know who you are and what you're looking for, and we'll help
-          you get to the right place.
-        </p>
-      </div>
+      <h2>How can we help you?</h2>
+      <p>
+        Let us know who you are and what you're looking for, and we'll help you
+        get to the right place.
+      </p>
       <!--  -->
 
       <!--  -->
@@ -55,15 +62,15 @@
 
   <section class="intro-cta">
     <div class="container">
-      <div>
-        <h2>What we do?</h2>
-        <p>
-          You might not have heard of us. But we're the people behind the
-          following impactful programmes.
-        </p>
-      </div>
+      <h2>What we do?</h2>
+      <p>
+        You might not have heard of us. But we're the people behind the
+        following impactful programmes.
+      </p>
+    </div>
 
-      <div class="grid info-cards">
+    <div class="container">
+      <div class="grid gap-2 cols-1 sm:cols-2 md:cols-3 info-cards">
         <InfoCard
           title="Get online week"
           copytext="Get Online Week is an annual digital inclusion campaign organised by Good Things Foundation"
@@ -79,21 +86,28 @@
           copytext="Make It Click was a programme targeting those who have made the move online but lack digital skills and use the internet only in limited ways."
           linkText="Read more"
         />
-        <InfoCard
+        <!-- <InfoCard
           title="Digital you"
           copytext="We are the digital inclusion charity, helping people improve their lives with free access to data, devices and digital skills learning"
           linkText="Read more"
-        />
+        /> -->
       </div>
-
-      <div class="align-center">
-        <ButtonLink to="/" linkText="More about what we do" />
-      </div>
+    </div>
+    <div class="align-center">
+      <ButtonLink to="/" linkText="More about what we do" />
     </div>
   </section>
 </template>
 
 <style lang="scss">
+@import "../assets/scss/partials/_colours";
+
+.nuxt-icon svg {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5rem;
+}
+
 // intro
 section.section-intro {
   background-color: #ccc;
@@ -110,28 +124,25 @@ section.section-intro {
       padding: 3rem;
     }
     h1 {
-      background-color: var(--primary-color);
-      color: var(--white);
-      margin: 1.5rem;
+      background-color: $primary-colour;
+      background-color: $app-red;
+      color: $white;
+      margin: 1rem 0;
       padding: 1rem 1rem;
       font-size: clamp(2.1rem, 9vw, 4.5rem);
       font-weight: normal;
       line-height: 1;
-      width: fit-content;
       width: 100%;
       max-width: 40rem;
-      text-align: center;
       border-radius: 10px;
-      @media (min-width: 768px) {
-        width: fit-content;
-      }
     }
     p.hero-text {
       padding: 1.5rem;
-      background-color: white;
-      color: var(--app-green);
+      background-color: #ffffffde;
+      color: $app-green;
       width: 100%;
-      margin: 0 0 2rem 0;
+      margin: 2rem 0;
+      font-size: 1.4rem;
       font-weight: bold;
       line-height: 1.5;
       border-radius: 10px;
@@ -151,19 +162,19 @@ section.intro-two {
       grid-template-columns: 50% 50%; // 2 col grid
     }
     div {
-      background-color: var(--app-green);
+      background-color: $app-green;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
       h2 {
-        color: var(--white);
+        color: $white;
         line-height: 1.2;
         margin-bottom: 1rem;
       }
       p {
-        color: var(--white);
+        color: $white;
       }
       a.button {
         margin-top: 2rem;
@@ -184,7 +195,7 @@ section.intro-two {
 // intro-three
 section.intro-three {
   text-align: center;
-  background-color: var(--grey);
+  background-color: $grey;
   margin-bottom: 1rem;
   .grid {
     grid-template-columns: auto; // 1 col grid
@@ -192,25 +203,24 @@ section.intro-three {
     @media (min-width: 1024px) {
       padding: 2rem;
     }
-    div {
-      h2 {
-        color: var(--black);
-        line-height: 1.2;
-        margin-bottom: 1rem;
-      }
-      p {
-        color: var(--black);
-      }
+    h2 {
+      color: $black;
+      line-height: 1.2;
+      margin-bottom: 1rem;
     }
+    p {
+      color: $black;
+    }
+
     .cta-banner {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin: 1rem auto;
+      margin: 2rem auto;
       padding: 1rem;
-      background-color: var(--white);
+      background-color: $white;
       box-shadow: 0 0 2.25em #00000033;
       max-width: 880px;
       border-radius: 10px;
@@ -223,7 +233,7 @@ section.intro-three {
         margin-right: 1rem;
         font-weight: bold;
         a {
-          color: var(--app-green);
+          color: $app-green;
         }
       }
       a {
@@ -237,28 +247,19 @@ section.intro-three {
   }
 }
 // intro-cta
-section.intro-cta {
-  background-color: var(--primary-color);
-  div {
-    padding: 1rem;
-    h2 {
-      color: var(--white);
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-    p {
-      color: var(--white);
-    }
+.intro-cta {
+  background-color: $primary-colour;
+  text-align: center;
+  padding: 1rem 1rem 3rem 1rem;
+  h2 {
+    color: $white;
+    margin-bottom: 1rem;
   }
-  div.grid {
-    grid-template-columns: 1fr; // 1 col grid
-    grid-gap: 2rem;
-    @media (min-width: 550px) {
-      grid-template-columns: 1fr 1fr; // 2 col grid
-    }
-    @media (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr; // 4 col grid
-    }
+  p {
+    color: $white;
+  }
+  .info-cards {
+    margin: 3rem 0;
   }
 }
 </style>

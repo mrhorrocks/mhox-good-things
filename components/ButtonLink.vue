@@ -38,17 +38,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_colours";
 a {
   width: 100%;
   position: relative;
   display: inline-block;
-  background-color: var(--white);
+  background-color: $white;
   padding: 0.5rem 1.5rem;
   margin: 0rem 0 0 0;
   border-radius: 10px;
-  border: 3px solid var(--white);
+  border: 3px solid $white;
   box-sizing: border-box;
-  color: var(--button-link-text);
+  color: $button-link-text;
   cursor: pointer;
   text-align: center;
   font-size: 1.25rem;
@@ -61,31 +62,31 @@ a {
     width: auto;
   }
   &:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: 3px solid var(--white);
+    background-color: $primary-colour;
+    color: $white;
+    border: 3px solid $white;
   }
   &.app-green {
-    background-color: var(--app-green);
-    color: var(--white);
+    background-color: $app-green;
+    color: $white;
     &:hover {
-      background-color: var(--app-red);
+      background-color: $app-red;
     }
   }
   &.app-red {
-    background-color: var(--app-red);
-    color: var(--white);
+    background-color: $app-red;
+    color: $white;
     &:hover {
-      background-color: var(--app-green);
+      background-color: $app-green;
     }
   }
   &.on-white {
-    background-color: var(--white);
-    color: var(--app-red);
-    border: 3px solid var(--black);
+    background-color: $white;
+    color: $app-red;
+    border: 3px solid $black;
     &:hover {
-      background-color: var(--app-red);
-      color: var(--white);
+      background-color: $app-red;
+      color: $white;
     }
   }
   &.no-margin {

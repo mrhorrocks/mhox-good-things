@@ -20,11 +20,12 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_colours";
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--white);
+  background: $white;
   min-height: 80px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -43,7 +44,7 @@ header {
     display: block;
     width: 40px;
     height: 40px;
-    color: var(--app-red);
+    color: $app-red;
     @media (min-width: 1024px) {
       display: none;
     }

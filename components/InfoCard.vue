@@ -26,8 +26,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.info-card {
+<style lang="scss">
+@import "../assets/scss/partials/_colours";
+div.info-card {
+  padding: 1rem;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +38,7 @@ export default {
   width: 100%;
   min-height: 200px;
   text-align: center;
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 1rem;
   box-shadow: 0 0 2.25em #00000033;
   p {
@@ -44,7 +47,7 @@ export default {
     margin: 1.5rem 0;
   }
   h4 {
-    color: var(--black);
+    color: $black;
     font-weight: 500;
   }
 }
