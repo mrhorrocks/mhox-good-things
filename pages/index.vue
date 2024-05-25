@@ -1,3 +1,12 @@
+<script setup>
+useHead({
+  titleTemplate: "%s",
+});
+definePageMeta({
+  layout: "default",
+});
+</script>
+
 <template>
   <section class="section-intro">
     <div class="container">
@@ -61,7 +70,7 @@
     </div>
 
     <div class="container">
-      <div class="grid info-cards">
+      <div class="grid gap-2 cols-1 sm:cols-2 md:cols-3 info-cards">
         <InfoCard
           title="Get online week"
           copytext="Get Online Week is an annual digital inclusion campaign organised by Good Things Foundation"
@@ -77,11 +86,11 @@
           copytext="Make It Click was a programme targeting those who have made the move online but lack digital skills and use the internet only in limited ways."
           linkText="Read more"
         />
-        <InfoCard
+        <!-- <InfoCard
           title="Digital you"
           copytext="We are the digital inclusion charity, helping people improve their lives with free access to data, devices and digital skills learning"
           linkText="Read more"
-        />
+        /> -->
       </div>
     </div>
     <div class="align-center">
@@ -92,6 +101,13 @@
 
 <style lang="scss">
 @import "../assets/scss/partials/_colours";
+
+.nuxt-icon svg {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5rem;
+}
+
 // intro
 section.section-intro {
   background-color: #ccc;
@@ -234,7 +250,7 @@ section.intro-three {
 .intro-cta {
   background-color: $primary-colour;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
   h2 {
     color: $white;
     margin-bottom: 1rem;
@@ -242,15 +258,8 @@ section.intro-three {
   p {
     color: $white;
   }
-  div.grid {
-    grid-template-columns: 1fr; // 1 col grid
-    grid-gap: 2rem;
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
-    @media (min-width: 1200px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+  .info-cards {
+    margin: 3rem 0;
   }
 }
 </style>
