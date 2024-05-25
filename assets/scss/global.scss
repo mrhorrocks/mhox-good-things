@@ -2,6 +2,7 @@
 @import "../../assets/fonts/_googlefonts";
 @import "./partials/_type";
 @import "./partials/_colours";
+@import "./partials/_grid";
 
 #app {
   font-weight: normal;
@@ -26,6 +27,9 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  @media (min-width: 1024px) {
+    padding: 0 3rem;
+  }
   main {
     background-color: lightblue;
   }
@@ -45,3 +49,10 @@ h5,
 h6 {
   color: green;
 } */
+.nuxt-icon svg {
+  width: 3em;
+  height: 3em;
+  margin-bottom: 0.125em;
+  vertical-align: middle;
+  margin-bottom: 0;
+}

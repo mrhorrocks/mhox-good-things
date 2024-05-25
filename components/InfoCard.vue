@@ -30,7 +30,7 @@ export default {
 @import "../assets/scss/partials/_colours";
 div.info-card {
   padding: 1rem;
-  margin: 3rem 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
