@@ -4,6 +4,7 @@
       <AppSearchBar />
       <AppHeader />
       <NuxtPage />
+      <AppFooter />
     </NuxtLayout>
   </Body>
 </template>
